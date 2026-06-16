@@ -1,0 +1,174 @@
+/* ==================================================
+   header.css — 全ページ共通固定ヘッダー
+   ================================================== */
+
+/* 固定ポジション・共通スタイル */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 40px;
+  background: #fff;
+}
+
+/* index.html 用ボタン類 */
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand img {
+  height: 48px;
+  width: auto;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn {
+  border: none;
+  border-radius: 999px;
+  padding: 12px 28px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-pink {
+  background: #E7316E;
+  color: #fff;
+}
+
+.btn-blue {
+  background: #00A2DE;
+  color: #fff;
+}
+
+.btn-outline {
+  border: 1px solid #6d6d6d;
+  color: #6d6d6d;
+  background: transparent;
+}
+
+/* ページコンテンツのオフセット（固定ヘッダー分） */
+body {
+  padding-top: 96px;
+}
+
+/* アカウントボタン（ログイン時ヘッダー） */
+.account-button {
+  width: 48px;
+  height: 48px;
+  background: #E7316E;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+}
+
+.account-button::before,
+.account-button::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+}
+
+.account-button::before {
+  top: 11px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.account-button::after {
+  bottom: 9px;
+  width: 24px;
+  height: 12px;
+  border-radius: 12px 12px 6px 6px;
+}
+
+/* SP */
+@media (max-width: 600px) {
+  .site-header {
+    padding: 12px 16px;
+    gap: 8px;
+  }
+
+  .brand img {
+    height: 36px;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 8px 16px;
+  }
+
+  body {
+    padding-top: 66px;
+  }
+
+  .registration-nav {
+    gap: 8px;
+  }
+
+  .pill-button {
+    min-width: 0;
+    padding: 8px 14px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+}
+
+/* ===== 共通フッター ===== */
+.site-footer {
+  border-top: 1px solid #FF8E3F;
+  padding: 20px 40px 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #1E1E1E;
+}
+
+.site-footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-footer nav {
+  display: flex;
+  gap: 28px;
+}
+
+@media (max-width: 600px) {
+  .site-footer {
+    padding: 20px 16px;
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 14px;
+    font-size: 10px;
+  }
+
+  .site-footer nav {
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .site-footer nav a {
+    font-size: 14px;
+    font-weight: 700;
+  }
+}

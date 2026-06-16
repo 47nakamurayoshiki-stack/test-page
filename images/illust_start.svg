@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300">
+  <!-- 赤いはてなマーク -->
+  <text x="288" y="96" font-family="'Hiragino Sans', 'Arial Black', sans-serif" font-size="60" font-weight="900" fill="#e0312e" transform="rotate(10 288 96)">?</text>
+
+  <!-- 机 -->
+  <rect x="6" y="238" width="348" height="16" rx="8" fill="#e7dac9"/>
+  <rect x="14" y="250" width="332" height="34" rx="10" fill="#f6efe6"/>
+
+  <!-- 観葉植物 -->
+  <g>
+    <path d="M66 152 l2 54" stroke="#3c8f50" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M64 180 q-22 -4 -28 -26 q24 -2 32 22 z" fill="#3f9b54"/>
+    <path d="M67 178 q3 -28 -11 -40 q-8 24 7 40 z" fill="#57b46c"/>
+    <path d="M68 184 q16 -12 32 -6 q-10 18 -30 12 z" fill="#3f9b54"/>
+    <rect x="45" y="202" width="44" height="9" rx="4" fill="#a09182"/>
+    <path d="M50 211 h34 l-4 27 h-26 z" fill="#8d7e6f"/>
+  </g>
+
+  <!-- 女性 -->
+  <g>
+    <!-- 後ろ髪 -->
+    <path d="M210 56 c-32 0 -50 23 -51 52 c-1 19 -4 35 -11 46 c13 10 31 7 38 -2 h48 c7 9 25 12 38 2 c-7 -11 -10 -27 -11 -46 c-1 -29 -19 -52 -51 -52 z" fill="#7e4f30"/>
+    <!-- 首 -->
+    <rect x="198" y="124" width="24" height="26" fill="#f2c5a4"/>
+    <!-- 胴体（ピンクのセーター） -->
+    <path d="M148 240 c-2 -52 12 -74 34 -82 h56 c22 8 36 30 34 82 z" fill="#ec7fa4"/>
+    <!-- 顔 -->
+    <circle cx="210" cy="104" r="34" fill="#f8d2b6"/>
+    <!-- 前髪 -->
+    <path d="M210 62 c-24 0 -40 16 -42 38 c8 -12 17 -18 27 -27 c8 11 31 15 57 11 c-5 -14 -19 -22 -42 -22 z" fill="#8a5a36"/>
+    <!-- 眉 -->
+    <path d="M189 94 q7 -5 14 -2" stroke="#7e4f30" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+    <path d="M217 92 q7 -2 14 3" stroke="#7e4f30" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+    <!-- 目（少し左を見て考えている） -->
+    <circle cx="196" cy="107" r="3.2" fill="#36251a"/>
+    <circle cx="224" cy="107" r="3.2" fill="#36251a"/>
+    <!-- ほお -->
+    <ellipse cx="187" cy="117" rx="5.5" ry="3.2" fill="#f5ab97" opacity="0.55"/>
+    <ellipse cx="233" cy="117" rx="5.5" ry="3.2" fill="#f5ab97" opacity="0.55"/>
+    <!-- 口 -->
+    <path d="M206 124 q6 4 12 0" stroke="#c96b5a" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <!-- 顎に当てた腕と手 -->
+    <path d="M154 232 q-8 -46 26 -74" stroke="#ec7fa4" stroke-width="24" stroke-linecap="round" fill="none"/>
+    <ellipse cx="186" cy="136" rx="11" ry="14" fill="#f8d2b6" transform="rotate(-18 186 136)"/>
+  </g>
+
+  <!-- ノートパソコン -->
+  <g>
+    <rect x="160" y="150" width="128" height="88" rx="9" fill="#b9bdc7"/>
+    <circle cx="224" cy="192" r="12" fill="#9aa0ac"/>
+    <path d="M150 238 h148 l11 12 q1 5 -6 5 h-158 q-7 0 -6 -5 z" fill="#a5aab5"/>
+  </g>
+</svg>

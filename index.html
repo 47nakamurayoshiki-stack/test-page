@@ -987,43 +987,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         display: inline-block;
       }
 
-      /* 手描き風の強調線（左右2本ずつ・擬似要素で描画） */
+      /* 斜め3本線デコレーション（仮画像） */
       .r2-strokes {
         position: relative;
         display: inline-block;
         width: 36px;
         height: 36px;
-        margin: 0 18px;
-        vertical-align: 14px;
+        margin: 0 14px;
+        vertical-align: 10px;
+        background-repeat: no-repeat;
+        background-size: contain;
       }
       .r2-strokes::before,
       .r2-strokes::after {
-        content: '';
-        position: absolute;
-        width: 4px;
-        height: 16px;
-        background: var(--pink);
-        border-radius: 999px;
+        content: none;
       }
-      .r2-strokes-left::before {
-        left: 4px;
-        top: 2px;
-        transform: rotate(-50deg);
+      /* 左側：仮画像 */
+      .r2-strokes-left {
+        background-image: url("images/3line_left.png");
       }
-      .r2-strokes-left::after {
-        left: 20px;
-        top: 14px;
-        transform: rotate(-25deg);
-      }
-      .r2-strokes-right::before {
-        right: 20px;
-        top: 14px;
-        transform: rotate(25deg);
-      }
-      .r2-strokes-right::after {
-        right: 4px;
-        top: 2px;
-        transform: rotate(50deg);
+      /* 右側：仮画像 */
+      .r2-strokes-right {
+        background-image: url("images/3line_right.png");
       }
 
       .r2-em {
@@ -1186,35 +1171,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         background: var(--pink);
         clip-path: polygon(0 0, 100% 0, 20% 100%);
       }
-      /* 紙吹雪風の線（2〜3本） */
+      /* 3本放射線（仮画像） */
       .r2-confetti {
         position: relative;
         display: inline-block;
         width: 30px;
         height: 26px;
         margin-left: 2px;
+        background-image: url("images/3line_right.png");
+        background-repeat: no-repeat;
+        background-size: contain;
       }
       .r2-confetti::before,
       .r2-confetti::after {
-        content: '';
-        position: absolute;
-        background: var(--pink);
-        border-radius: 999px;
-      }
-      .r2-confetti::before {
-        width: 3px;
-        height: 12px;
-        left: 6px;
-        top: 10px;
-        transform: rotate(40deg);
-        box-shadow: 14px -4px 0 var(--pink);
-      }
-      .r2-confetti::after {
-        width: 3px;
-        height: 9px;
-        left: 16px;
-        top: 14px;
-        transform: rotate(70deg);
+        content: none;
       }
 
       @media (max-width: 1080px) {
@@ -1544,6 +1514,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .entry-badge-icon {
         font-size: 28px;
         flex-shrink: 0;
+        width: 52px;
+        height: 52px;
+        display: block;
+        object-fit: contain;
       }
       .entry-badge strong {
         display: block;
@@ -2031,21 +2005,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 <div class="entry-badges">
                     <div class="entry-badge">
-                        <span class="entry-badge-icon">🌱</span>
+                        <img class="entry-badge-icon" src="images/spi_icon01.png" alt="">
                         <div>
                             <strong>初心者から上級者まで対応</strong>
                             <p>基礎から応用まで段階的に学習</p>
                         </div>
                     </div>
                     <div class="entry-badge">
-                        <span class="entry-badge-icon">📖</span>
+                        <img class="entry-badge-icon" src="images/spi_icon02.png" alt="">
                         <div>
                             <strong>信頼できるコンテンツ</strong>
                             <p>最新の出題傾向を徹底分析</p>
                         </div>
                     </div>
                     <div class="entry-badge">
-                        <span class="entry-badge-icon">📱</span>
+                        <img class="entry-badge-icon" src="images/spi_icon03.png" alt="">
                         <div>
                             <strong>スキマ時間で効率学習</strong>
                             <p>スマホでいつでもどこでも学べる</p>
@@ -2105,7 +2079,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- ===== 就活の専門家に相談する ===== -->
         <section class="consult-v2" aria-label="就活の専門家に相談する">
             <!-- デコレーション -->
-            <span class="cv2-deco cv2-deco-leaf1" aria-hidden="true">🍃</span>
+            <img class="cv2-deco cv2-deco-leaf1" src="images/deco_leaf_1.png" alt="" aria-hidden="true">
             <span class="cv2-deco cv2-deco-circle1" aria-hidden="true"></span>
             <span class="cv2-deco cv2-deco-circle2" aria-hidden="true"></span>
 
@@ -2129,7 +2103,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="cv2-illust">
                         <img src="images/97.png" alt="就活アドバイザー" onerror="this.style.display='none'">
                     </div>
-                    <span class="cv2-deco cv2-deco-leaf2" aria-hidden="true">🍃</span>
+                    <img class="cv2-deco cv2-deco-leaf2" src="images/deco_leaf_1.png" alt="" aria-hidden="true">
                     <span class="cv2-deco cv2-deco-circle3" aria-hidden="true"></span>
                 </div>
             </div>
@@ -2137,7 +2111,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <!-- ===== 合格者の声 ===== -->
         <section class="voice-v2" aria-label="合格者の声">
-            <span class="vv2-deco vv2-deco-leaf" aria-hidden="true">🍃</span>
+            <img class="vv2-deco vv2-deco-leaf" src="images/deco_leaf_2.png" alt="" aria-hidden="true">
             <span class="vv2-deco vv2-deco-circle1" aria-hidden="true"></span>
             <span class="vv2-deco vv2-deco-circle2" aria-hidden="true"></span>
 
